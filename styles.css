@@ -71,6 +71,8 @@ p {
     border-radius: 8px;
     font-weight: bold;
     transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -233,4 +235,27 @@ p {
 
 .btn-submit:hover {
     background-color: #7dd3fc;
+}
+
+/* Sección Admin */
+.admin-container {
+    padding: 60px 20px;
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+}
+
+.admin-container h2 {
+    font-size: 2rem;
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.login-card {
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: left;
 }

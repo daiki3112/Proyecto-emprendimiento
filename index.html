@@ -86,5 +86,25 @@
         </form>
     </section>
 
+    <!-- Sección Panel Admin / Login -->
+    <section id="admin" class="admin-container">
+        <h2>Panel de Administración</h2>
+        <p>Acceso exclusivo para gestión interna del emprendimiento.</p>
+
+        <div class="login-card">
+            <form onsubmit="event.preventDefault(); alert('¡Sesión iniciada correctamente como Administrador!');">
+                <div class="form-group">
+                    <label for="admin-user">Usuario / Email</label>
+                    <input type="text" id="admin-user" placeholder="admin@emprendimiento.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-pass">Contraseña</label>
+                    <input type="password" id="admin-pass" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Ingresar al Panel</button>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
