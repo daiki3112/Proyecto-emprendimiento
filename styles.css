@@ -1,22 +1,27 @@
-/* Estilos generales */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a; /* Fondo oscuro elegante */
-    color: #f8fafc;            /* Texto claro */
-    margin: 0;
-    padding: 40px 20px;
-    text-align: center;
+/* Menú de Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b; /* Fondo un poco más claro que el body */
+    padding: 15px 30px;
+    border-bottom: 2px solid #334155;
 }
 
-/* Título principal */
-h1 {
-    color: #38bdf8; /* Azul cyan neón */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #38bdf8;
 }
 
-/* Subtítulos o párrafos */
-p {
-    color: #94a3b8; /* Gris suave */
-    font-size: 1.2rem;
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8; /* Cambia a azul neón al pasar el mouse */
 }
