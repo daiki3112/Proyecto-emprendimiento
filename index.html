@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Emprendimiento</title>
+    <title>Mi Emprendimiento Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,10 +20,46 @@
     </header>
 
     <!-- Sección Principal (Hero) -->
-    <main id="inicio">
+    <main id="inicio" class="hero">
         <h1>¡Bienvenidos a mi Emprendimiento Digital!</h1>
         <p>Transformando ideas en experiencias reales con código e IA.</p>
+        <a href="#catalogo" class="btn-primary">Explorar Catálogo</a>
     </main>
+
+    <!-- Sección Catálogo de Productos/Servicios -->
+    <section id="catalogo" class="catalogo-container">
+        <h2>Nuestros Productos & Servicios</h2>
+        <div class="grid-productos">
+
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <span class="badge">Popular</span>
+                <h3>Servicio Básico</h3>
+                <p>Solución rápida y eficiente diseñada para iniciar tu negocio digital con pie derecho.</p>
+                <div class="precio">$29.99</div>
+                <button class="btn-card">Obtener Servicio</button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <span class="badge pro">Recomendado</span>
+                <h3>Plan Emprendedor</h3>
+                <p>Paquete completo con integración de base de datos y diseño responsive avanzado.</p>
+                <div class="precio">$59.99</div>
+                <button class="btn-card">Obtener Servicio</button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <span class="badge ia">IA Tech</span>
+                <h3>Modulo Inteligente</h3>
+                <p>Integración con asistente de Inteligencia Artificial para atención automatizada 24/7.</p>
+                <div class="precio">$89.99</div>
+                <button class="btn-card">Obtener Servicio</button>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>
