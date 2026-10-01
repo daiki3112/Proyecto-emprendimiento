@@ -1,5 +1,28 @@
-// Lógica del Chatbot de Inteligencia Artificial
+// Lógica de Ventana Modal de Compra
+function abrirModal(servicio, precio) {
+    document.getElementById('modal-titulo').textContent = 'Solicitar ' + servicio;
+    document.getElementById('modal-precio').textContent = precio;
+    document.getElementById('modal-compra').style.display = 'block';
+}
 
+function cerrarModal() {
+    document.getElementById('modal-compra').style.display = 'none';
+}
+
+function confirmarCompra() {
+    alert('¡Gracias por tu solicitud! Nos pondremos en contacto contigo pronto.');
+    cerrarModal();
+}
+
+// Cerrar modal al hacer clic fuera del contenido
+window.onclick = function(event) {
+    const modal = document.getElementById('modal-compra');
+    if (event.target === modal) {
+        cerrarModal();
+    }
+}
+
+// Lógica del Chatbot de Inteligencia Artificial
 function preguntarIA(mensaje) {
     const input = document.getElementById('user-input');
     input.value = mensaje;
