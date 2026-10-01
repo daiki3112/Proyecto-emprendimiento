@@ -3,82 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transforma tu ropa vieja en prendas exclusivas. Confección a tu gusto con entrega express y membresías.">
-    <title>💜 ReStyle Club | Moda & Confección Custom</title>
+    <meta name="description" content="Vintage y algo más - Rediseño, upcycling y membresías de confección rápida para transformar tu clóset.">
+    <title>Vintage y algo más | Rediseño & Moda Sostenible</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Menú de Navegación -->
+    <!-- Menú de Navegación con Logo y Eslogan -->
     <header>
-        <div class="logo">🧵 ReStyle Club</div>
+        <div class="logo-container">
+            <span class="logo-icon">🪡✨</span>
+            <div class="logo-text">
+                <span class="brand-name">Vintage & algo más</span>
+                <span class="slogan-header">Rediseño & Moda Sostenible</span>
+            </div>
+        </div>
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#concepto">El Concepto</a>
-            <a href="#catalogo">Membresías & Planes</a>
-            <a href="#ia">Asistente Moda IA</a>
-            <a href="#contacto">Agendar Cita</a>
+            <a href="#galeria">Transformaciones</a>
+            <a href="#catalogo">Membresías</a>
+            <a href="#ia">Asistente IA</a>
+            <a href="#contacto">Citas</a>
             <a href="#admin">Admin</a>
         </nav>
     </header>
 
     <!-- Sección Principal (Hero) -->
     <main id="inicio" class="hero">
-        <h1>Rediseña Tu Clóset. Reinventa Tu Estilo.</h1>
-        <p>Trae esas prendas que ya no usas. Las rediseñamos a tu gusto y te las entregamos al día siguiente.</p>
-        <a href="#catalogo" class="btn-primary">Conocer Membresías</a>
+        <div class="hero-badge">✨ Tu historia, tu estilo</div>
+        <h1>Rediseña Tu Clóset.<br><span class="highlight-text">Reinventa Tu Historia.</span></h1>
+        <p class="hero-slogan">"Tu ropa de siempre, transformada como nunca la habías imaginado."</p>
+        <p class="hero-desc">Trae esas prendas olvidadas. Las rediseñamos a tu medida y te las entregamos al día siguiente con nuestra membresía.</p>
+        <div class="hero-buttons">
+            <a href="#catalogo" class="btn-primary">Ver Membresías VIP</a>
+            <a href="#galeria" class="btn-secondary">Ver Galería</a>
+        </div>
     </main>
 
     <!-- Sección Concepto / Qué nos hace diferentes -->
     <section id="concepto" class="concepto-container">
-        <h2>¿Cómo Funciona la Revolución ReStyle?</h2>
+        <h2>¿Por qué Vintage y algo más?</h2>
         <div class="grid-concepto">
             <div class="concepto-box">
                 <div class="icon">👕</div>
                 <h3>1. Trae tu prenda</h3>
-                <p>Esa chaqueta, jean o buzo que sientes que ya no va contigo pero amas su tela.</p>
+                <p>Esa chaqueta, jean o abrigo que amas por su tela pero ya no va con tu estilo actual.</p>
             </div>
             <div class="concepto-box highlight">
                 <div class="icon">👑</div>
                 <h3>2. Membresía VIP</h3>
-                <p>Pagas una cuota mensual. Traes tu prenda en la mañana y te la entregamos lista mañana por la tarde **sin costo extra**.</p>
+                <p>Pagas tu mensualidad, entregas la prenda en la mañana y te la entregamos lista <strong>mañana por la tarde sin costo extra</strong>.</p>
             </div>
             <div class="concepto-box">
                 <div class="icon">✂️</div>
-                <h3>3. Sin Membresía</h3>
-                <p>Pagas la confección individual por prenda. ¿La quieres rápida? Añades el extra de velocidad Express.</p>
+                <h3>3. Servicio Ocasional</h3>
+                <p>Sin mensualidad: pagas la confección por prenda y añades el extra Express solo si la quieres de inmediato.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Antes vs Después -->
+    <section id="galeria" class="galeria-container">
+        <h2>Antes vs. Después: La Magia del Rediseño</h2>
+        <p>Mira lo que logramos en nuestro taller con prendas que iban al olvido:</p>
+        
+        <div class="grid-galeria">
+            <div class="galeria-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=600&auto=format&fit=crop" alt="Chaqueta Vintage Rediseñada">
+                    <span class="img-badge">Jean & Denim</span>
+                </div>
+                <h3>Chaqueta Oversize a Crop Neón</h3>
+                <p>Ajuste de talle, parches vintage personalizados y entalle moderno.</p>
+            </div>
+
+            <div class="galeria-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=600&auto=format&fit=crop" alt="Taller de Confección">
+                    <span class="img-badge">Confección Express</span>
+                </div>
+                <h3>Vestido Retro a Conjunto 2 Piezas</h3>
+                <p>Corte de falda, elaboración de top corsé y costuras reforzadas.</p>
+            </div>
+
+            <div class="galeria-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=600&auto=format&fit=crop" alt="Detalle de Costura">
+                    <span class="img-badge">Custom Art</span>
+                </div>
+                <h3>Pantalón Clásico a Cargo Streetwear</h3>
+                <p>Añadido de bolsillos táctiles y ajuste bota tubo en 24 horas.</p>
             </div>
         </div>
     </section>
 
     <!-- Sección Catálogo de Servicios y Membresías -->
     <section id="catalogo" class="catalogo-container">
-        <h2>Servicios & Planes de Membresía</h2>
+        <h2>Planes & Membresías de Confección</h2>
         <div class="grid-productos">
 
             <!-- Tarjeta 1 -->
             <div class="card">
+                <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=500&auto=format&fit=crop" class="card-img" alt="Servicio Ocasional">
                 <span class="badge">Ocasional</span>
                 <h3>Confección Individual</h3>
-                <p>Rediseño y ajuste personalizado para 1 prenda. Tiempo estándar de entrega (3 a 5 días).</p>
+                <p>Rediseño y ajuste personalizado para 1 prenda. Entrega estándar (3 a 5 días).</p>
                 <div class="precio">$15.90 <span class="subtext">/ prenda</span></div>
                 <button class="btn-card" onclick="abrirModal('Confección Individual', '$15.90')">Solicitar Servicio</button>
             </div>
 
             <!-- Tarjeta 2 -->
             <div class="card pro-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=500&auto=format&fit=crop" class="card-img" alt="Membresía VIP">
                 <span class="badge pro">Más Popular</span>
                 <h3>Membresía VIP Restyle</h3>
-                <p>Paga mensual. Trae prendas ilimitadas al mes con **Entrega Express 24h incluida** sin costo extra.</p>
+                <p>Prendas mensuales ilimitadas + <strong>Entrega Express 24h incluida</strong> sin costo extra.</p>
                 <div class="precio">$39.90 <span class="subtext">/ mes</span></div>
                 <button class="btn-card btn-pro" onclick="abrirModal('Membresía VIP Restyle', '$39.90 / mes')">Unirme al Club</button>
             </div>
 
             <!-- Tarjeta 3 -->
             <div class="card">
+                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=500&auto=format&fit=crop" class="card-img" alt="Speed Pass">
                 <span class="badge ia">Speed Pass</span>
                 <h3>Upgrade Confección Express</h3>
-                <p>¿Sin membresía pero la necesitas para mañana? Paga la velocidad de entrega en 24h.</p>
+                <p>¿No tienes membresía pero la necesitas para mañana? Paga el pase de velocidad 24h.</p>
                 <div class="precio">+$9.90 <span class="subtext">/ extra por prenda</span></div>
                 <button class="btn-card" onclick="abrirModal('Upgrade Express 24h', '+$9.90')">Añadir Express</button>
             </div>
@@ -91,7 +141,7 @@
         <div class="modal-content">
             <span class="close-modal" onclick="cerrarModal()">&times;</span>
             <h3 id="modal-titulo">Confirmar Servicio</h3>
-            <p id="modal-descripcion">Estás a un paso de darle una nueva vida a tus prendas exclusivas.</p>
+            <p id="modal-descripcion">Estás a un paso de darle una nueva vida a tus prendas en Vintage y algo más.</p>
             <div class="modal-precio" id="modal-precio">$0.00</div>
             <button class="btn-primary" onclick="confirmarCompra()" style="width: 100%;">Confirmar Solicitud</button>
         </div>
@@ -99,13 +149,13 @@
 
     <!-- Sección Asistente de IA de Moda -->
     <section id="ia" class="ia-container">
-        <h2>🤖 Asistente Virtual de Modas</h2>
-        <p>¿Dudas sobre cómo transformar una prenda o qué plan elegir? Pregúntale a nuestra IA estilista.</p>
+        <h2>🤖 Stylist IA | Vintage y algo más</h2>
+        <p>¿Dudas sobre cómo rediseñar una prenda o qué plan te conviene? Chatea con nuestra estilista virtual.</p>
 
         <div class="chat-card">
             <div class="chat-box" id="chat-box">
                 <div class="message bot">
-                    👋 ¡Hola! Soy el asistente de ReStyle Club. ¿Quieres saber cómo funciona la membresía o cómo transformar tu ropa?
+                    👋 ¡Hola! Soy la estilista de Vintage y algo más. ¿Tienes una prenda en mente que quieras transformar?
                 </div>
             </div>
 
@@ -116,7 +166,7 @@
             </div>
 
             <div class="chat-input-container">
-                <input type="text" id="user-input" placeholder="Ej: ¿Qué puedo hacer con un jean viejo?..." onkeypress="if(event.key === 'Enter') enviarMensajeIA()">
+                <input type="text" id="user-input" placeholder="Ej: ¿Qué hago con una chaqueta vieja?..." onkeypress="if(event.key === 'Enter') enviarMensajeIA()">
                 <button onclick="enviarMensajeIA()" class="btn-chat">Enviar</button>
             </div>
         </div>
@@ -124,58 +174,58 @@
 
     <!-- Sección de Contacto y Citas -->
     <section id="contacto" class="contacto-container">
-        <h2>Agenda tu Recepción de Ropa</h2>
-        <p>Déjanos tus datos para agendar la visita a nuestro taller y traer tus prendas.</p>
+        <h2>Agéndate en el Taller</h2>
+        <p>Déjanos tus datos para recibir tu ropa y planear el rediseño juntos.</p>
         
-        <form class="form-contacto" onsubmit="event.preventDefault(); alert('¡Cita agendada con éxito! Te esperamos en el taller.');">
+        <form class="form-contacto" onsubmit="event.preventDefault(); alert('¡Cita agendada en Vintage y algo más! Te esperamos.');">
             <div class="form-group">
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" placeholder="Tu nombre completo" required>
             </div>
             
             <div class="form-group">
-                <label for="email">Correo o WhatsApp</label>
+                <label for="email">WhatsApp o Correo</label>
                 <input type="text" id="email" placeholder="300 123 4567 / correo@ejemplo.com" required>
             </div>
             
             <div class="form-group">
-                <label for="mensaje">¿Qué prendas deseas rediseñar?</label>
-                <textarea id="mensaje" rows="4" placeholder="Ej: Tengo una chaqueta de jean para entallar y un vestido para cortar..." required></textarea>
+                <label for="mensaje">¿Qué prendas deseas transformar?</label>
+                <textarea id="mensaje" rows="4" placeholder="Ej: Tengo una chaqueta de jean para entallar y dos camisetas para personalizar..." required></textarea>
             </div>
             
-            <button type="submit" class="btn-submit">Agendar Cita en Taller</button>
+            <button type="submit" class="btn-submit">Agendar Visita a Taller</button>
         </form>
     </section>
 
     <!-- Sección Panel Admin / Login -->
     <section id="admin" class="admin-container">
-        <h2>Panel de Gestión de Taller</h2>
-        <p>Acceso interno para sastre, diseñadores y gestión de entregas.</p>
+        <h2>Panel de Gestión | Taller</h2>
+        <p>Control interno para sastres, diseño y estados de entrega.</p>
 
         <!-- Monitoreo de Estado del Taller -->
         <div class="system-status">
             <div class="status-item">
-                <span class="status-dot green"></span> Taller: <strong>Recibiendo Prendas</strong>
+                <span class="status-dot green"></span> Taller: <strong>Abierto & Confeccionando</strong>
             </div>
             <div class="status-item">
-                <span class="status-dot blue"></span> Cola Express: <strong>3 Prendas hoy</strong>
+                <span class="status-dot blue"></span> Cola Express: <strong>4 Prendas en proceso</strong>
             </div>
             <div class="status-item">
-                <span class="status-dot purple"></span> Latencia Sistema: <strong id="ping-val">24ms</strong>
+                <span class="status-dot purple"></span> Latencia: <strong id="ping-val">24ms</strong>
             </div>
         </div>
 
         <div class="login-card">
-            <form onsubmit="event.preventDefault(); alert('¡Sesión iniciada correctamente en Panel de Confección!');">
+            <form onsubmit="event.preventDefault(); alert('¡Sesión iniciada correctamente en el Taller Vintage!');">
                 <div class="form-group">
                     <label for="admin-user">Usuario Diseñador</label>
-                    <input type="text" id="admin-user" placeholder="diseno@restyleclub.com" required>
+                    <input type="text" id="admin-user" placeholder="diseno@vintageyalgomas.com" required>
                 </div>
                 <div class="form-group">
                     <label for="admin-pass">Contraseña</label>
                     <input type="password" id="admin-pass" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="btn-primary" style="width: 100%;">Ingresar al Taller</button>
+                <button type="submit" class="btn-primary" style="width: 100%;">Ingresar al Sistema</button>
             </form>
         </div>
     </section>
@@ -183,14 +233,14 @@
     <!-- Pie de Página (Footer) -->
     <footer>
         <div class="footer-content">
-            <p>🧵 <strong>ReStyle Club</strong> — Confección, Upcycling & Moda Sostenible</p>
+            <p>🪡 <strong>Vintage y algo más</strong> — Tu ropa de siempre, transformada como nunca la habías imaginado.</p>
             <div class="footer-links">
                 <a href="#inicio">Inicio</a> | 
-                <a href="#concepto">El Concepto</a> | 
-                <a href="#catalogo">Membresías</a> | 
-                <a href="#contacto">Contacto</a>
+                <a href="#concepto">Concepto</a> | 
+                <a href="#galeria">Galería</a> | 
+                <a href="#catalogo">Membresías</a>
             </div>
-            <p class="copyright">© 2026 Todos los derechos reservados.</p>
+            <p class="copyright">© 2026 Vintage y algo más. Todos los derechos reservados.</p>
         </div>
     </footer>
 

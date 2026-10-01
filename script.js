@@ -79,24 +79,31 @@ setInterval(() => {
     }
 }, 3000);
 
-// Detección de sección visible al hacer scroll
+// Detección Optimizada de scroll (suave para la CPU)
+let isScrolling = false;
 window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section, main');
-    const navLinks = document.querySelectorAll('nav a');
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            const sections = document.querySelectorAll('section, main');
+            const navLinks = document.querySelectorAll('nav a');
 
-    let currentSection = 'inicio';
+            let currentSection = 'inicio';
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= (sectionTop - 180)) {
-            currentSection = section.getAttribute('id');
-        }
-    });
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= (sectionTop - 180)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + currentSection) {
-            link.classList.add('active');
-        }
-    });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+            isScrolling = false;
+        });
+        isScrolling = true;
+    }
 });

@@ -11,8 +11,8 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #08040c; /* Negro oscuro con matiz violeta */
-    color: #f3e8ff;            /* Texto morado muy claro */
+    background-color: #08040c;
+    color: #f3e8ff;
     text-align: center;
     line-height: 1.6;
 }
@@ -22,24 +22,48 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #12071f; /* Violeta noche */
-    padding: 15px 30px;
+    background-color: #12071f;
+    padding: 12px 30px;
     border-bottom: 2px solid #3b1560;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.logo {
-    font-size: 1.4rem;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #c084fc; /* Morado claro brillante */
+    color: #c084fc;
+    letter-spacing: 0.5px;
+}
+
+.slogan-header {
+    font-size: 0.72rem;
+    color: #a78bfa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav a {
     color: #e9d5ff;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 18px;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -52,25 +76,55 @@ nav a:hover, nav a.active {
 
 /* Hero Section */
 .hero {
-    padding: 90px 20px;
+    padding: 85px 20px 70px 20px;
     background: linear-gradient(180deg, #12071f 0%, #08040c 100%);
 }
 
-h1 {
+.hero-badge {
+    display: inline-block;
+    background: #2e104d;
     color: #c084fc;
-    font-size: 2.6rem;
-    margin-bottom: 12px;
-    text-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid #7e22ce;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #c0a5e0;
-    font-size: 1.15rem;
+h1 {
+    color: #f3e8ff;
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+}
+
+.highlight-text {
+    color: #c084fc;
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.hero-slogan {
+    font-style: italic;
+    color: #d8b4fe;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.hero-desc {
+    color: #a78bfa;
+    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .btn-primary {
     display: inline-block;
-    margin-top: 25px;
     padding: 12px 28px;
     background-color: #9333ea;
     color: white;
@@ -89,7 +143,24 @@ p {
     box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
 }
 
-/* Sección Concepto / Cajas */
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #170a29;
+    color: #c084fc;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #3b1560;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #2e104d;
+    color: white;
+}
+
+/* Sección Concepto */
 .concepto-container {
     padding: 60px 20px;
     background-color: #0d0517;
@@ -134,9 +205,88 @@ p {
     margin-bottom: 10px;
 }
 
+/* Galería Antes vs Después */
+.galeria-container {
+    padding: 60px 20px;
+    background-color: #08040c;
+}
+
+.galeria-container h2 {
+    font-size: 2rem;
+    color: #f3e8ff;
+    margin-bottom: 10px;
+}
+
+.galeria-container p {
+    color: #a78bfa;
+    margin-bottom: 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.galeria-card {
+    background: #150924;
+    border: 1px solid #3b1560;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.galeria-card:hover {
+    transform: translateY(-5px);
+    border-color: #c084fc;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(8, 4, 12, 0.8);
+    color: #c084fc;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid #7e22ce;
+    font-weight: bold;
+}
+
+.galeria-card h3 {
+    color: #f3e8ff;
+    font-size: 1.1rem;
+    margin: 15px 15px 8px 15px;
+}
+
+.galeria-card p {
+    color: #a78bfa;
+    font-size: 0.9rem;
+    margin: 0 15px;
+}
+
 /* Catálogo Grid */
 .catalogo-container {
     padding: 60px 20px;
+    background-color: #0d0517;
+    border-top: 1px solid #2a0e45;
 }
 
 .catalogo-container h2 {
@@ -158,10 +308,19 @@ p {
     background: #150924;
     border: 1px solid #3b1560;
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px;
     position: relative;
     text-align: left;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .card.pro-card {
@@ -199,18 +358,18 @@ p {
 
 .card h3 {
     color: #f3e8ff;
-    margin: 15px 0 10px 0;
+    margin: 12px 0 8px 0;
 }
 
 .precio {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #c084fc;
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
 .precio .subtext {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #a78bfa;
     font-weight: normal;
 }
@@ -253,7 +412,6 @@ p {
     width: 100%;
     height: 100%;
     background-color: rgba(8, 4, 12, 0.88);
-    backdrop-filter: blur(5px);
 }
 
 .modal-content {
@@ -290,10 +448,10 @@ p {
     margin: 20px 0;
 }
 
-/* Sección de Inteligencia Artificial */
+/* Sección IA */
 .ia-container {
     padding: 60px 20px;
-    background-color: #0d0517;
+    background-color: #08040c;
     border-top: 1px solid #2a0e45;
 }
 
@@ -399,7 +557,7 @@ p {
     color: #08040c;
 }
 
-/* Sección de Contacto */
+/* Contacto */
 .contacto-container {
     padding: 60px 20px;
     background-color: #12071f;
@@ -444,7 +602,6 @@ p {
     color: #f3e8ff;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: border-color 0.3s;
 }
 
 .form-group input:focus, 
@@ -463,7 +620,6 @@ p {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .btn-submit:hover {
@@ -471,7 +627,7 @@ p {
     color: #08040c;
 }
 
-/* Sección Admin */
+/* Admin */
 .admin-container {
     padding: 60px 20px;
     background-color: #08040c;
@@ -524,7 +680,7 @@ p {
     text-align: left;
 }
 
-/* Pie de Página (Footer) */
+/* Footer */
 footer {
     background-color: #050208;
     padding: 30px 20px;
@@ -548,10 +704,6 @@ footer {
     margin: 0 8px;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
 .copyright {
     font-size: 0.8rem;
     color: #a78bfa;
@@ -566,19 +718,19 @@ footer {
     }
 
     nav a {
-        margin: 0 8px;
-        font-size: 0.9rem;
+        margin: 0 6px;
+        font-size: 0.85rem;
     }
 
     h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 
-    .hero {
-        padding: 50px 15px;
+    .hero-buttons {
+        flex-direction: column;
     }
 
-    .grid-productos, .grid-concepto {
+    .grid-productos, .grid-concepto, .grid-galeria {
         grid-template-columns: 1fr;
     }
 
@@ -586,17 +738,5 @@ footer {
         flex-direction: column;
         border-radius: 12px;
         align-items: center;
-    }
-
-    .chat-card, .form-contacto, .login-card {
-        padding: 20px;
-    }
-
-    .chat-input-container {
-        flex-direction: column;
-    }
-
-    .btn-chat {
-        width: 100%;
     }
 }
