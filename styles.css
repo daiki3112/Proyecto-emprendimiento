@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0f172a;
@@ -164,6 +168,53 @@ p {
 
 .btn-card:hover {
     background-color: #7dd3fc;
+}
+
+/* Modal Emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #1e293b;
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    margin: 15% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    color: #94a3b8;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #f8fafc;
+}
+
+.modal-precio {
+    font-size: 2rem;
+    color: #38bdf8;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 /* Sección de Inteligencia Artificial */
@@ -399,4 +450,42 @@ footer {
 .copyright {
     font-size: 0.8rem;
     color: #475569;
+}
+
+/* --- ADAPTABILIDAD RESPONSIVE (MEDIA QUERIES) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-card, .form-contacto, .login-card {
+        padding: 20px;
+    }
+
+    .chat-input-container {
+        flex-direction: column;
+    }
+
+    .btn-chat {
+        width: 100%;
+    }
 }
