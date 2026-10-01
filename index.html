@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Emprendimiento Digital</title>
+    <meta name="description" content="Plataforma de servicios digitales con Inteligencia Artificial integrada para emprendimientos.">
+    <title>Mi Emprendimiento Digital | Proyecto Integrador</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -127,6 +128,19 @@
     <section id="admin" class="admin-container">
         <h2>Panel de Administración</h2>
         <p>Acceso exclusivo para gestión interna del emprendimiento.</p>
+
+        <!-- Monitoreo de Estado del Servidor -->
+        <div class="system-status">
+            <div class="status-item">
+                <span class="status-dot green"></span> Servidor: <strong>Online</strong>
+            </div>
+            <div class="status-item">
+                <span class="status-dot blue"></span> DB Status: <strong>Conectado</strong>
+            </div>
+            <div class="status-item">
+                <span class="status-dot purple"></span> Latencia: <strong id="ping-val">24ms</strong>
+            </div>
+        </div>
 
         <div class="login-card">
             <form onsubmit="event.preventDefault(); alert('¡Sesión iniciada correctamente como Administrador!');">
