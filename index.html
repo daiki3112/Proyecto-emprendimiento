@@ -14,6 +14,7 @@
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#catalogo">Catálogo</a>
+            <a href="#ia">Asistente IA</a>
             <a href="#contacto">Contacto</a>
             <a href="#admin">Admin</a>
         </nav>
@@ -58,6 +59,31 @@
                 <button class="btn-card">Obtener Servicio</button>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Sección Asistente de IA -->
+    <section id="ia" class="ia-container">
+        <h2>🤖 Asistente Virtual Inteligente</h2>
+        <p>¿No sabes qué servicio elegir? Chatea con nuestra IA integrada para recibir orientación instantánea.</p>
+
+        <div class="chat-card">
+            <div class="chat-box" id="chat-box">
+                <div class="message bot">
+                    👋 ¡Hola! Soy el asistente virtual de tu emprendimiento. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+
+            <div class="quick-prompts">
+                <button onclick="preguntarIA('¿Qué plan me recomiendas?')">💡 ¿Qué plan me recomiendas?</button>
+                <button onclick="preguntarIA('¿Qué servicios ofrecen?')">🛒 Ver servicios</button>
+                <button onclick="preguntarIA('¿Cómo me contacto con soporte?')">📞 Contacto</button>
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" id="user-input" placeholder="Escribe tu duda aquí..." onkeypress="if(event.key === 'Enter') enviarMensajeIA()">
+                <button onclick="enviarMensajeIA()" class="btn-chat">Enviar</button>
+            </div>
         </div>
     </section>
 
@@ -106,5 +132,7 @@
         </div>
     </section>
 
+    <!-- Archivo de Lógica JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
